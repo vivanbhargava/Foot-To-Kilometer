@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Foot To Kilometer</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Foot</label>
+            <input id="input" type="number" placeholder="Foot" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Kilometer: <span id="outputkilo"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputkilo").innerHTML = valNum /  328.1;
+        }
+    </script>
+
+</body></html>
